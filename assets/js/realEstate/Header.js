@@ -5,14 +5,27 @@ export default class Header extends Component {
   constructor () {
     super()
     this.state = {
-      name: 'Chris'
+      itemCount: '5',
+      totalCost: '2103.92'
     }
-    var temp = "temporary";
   }
 
 
   render () {
     return (<header>
+    <div className="header-top wrapper">
+        <div className="contact">Call us at: <span>708-246-1212</span><button className="chat-btn" type="submit">LIVE CHAT NOW</button></div>
+        <div className="user-session-area">
+          <div>Baby Registry</div>
+          <div>Login/ Register</div>
+          <ul>
+            <li> {` ${this.state.itemCount} items`}</li>
+            <li>Check out</li>
+            <li><span>$</span>{` ${this.state.totalCost}`}</li>
+          </ul>
+        </div>
+    </div>
+
 
 
   <nav>
@@ -75,9 +88,6 @@ export default class Header extends Component {
         </div>
       </div>
     </nav>
-
-
-
       </header>)
   }
 }
