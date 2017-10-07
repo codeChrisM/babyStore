@@ -60,7 +60,6 @@ var App = function (_Component) {
         _react2.default.createElement(
           'section',
           null,
-          _react2.default.createElement(_Filter2.default, { id: 'content-area' }),
           _react2.default.createElement(_Listings2.default, null)
         )
       );
@@ -262,8 +261,9 @@ var Header = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
 
     _this.state = {
-      name: 'Joe'
+      name: 'Chris'
     };
+    var temp = "temporary";
     return _this;
   }
 
@@ -274,32 +274,213 @@ var Header = function (_Component) {
         'header',
         null,
         _react2.default.createElement(
-          'div',
-          { className: 'logo' },
-          ' Logo'
-        ),
-        _react2.default.createElement(
           'nav',
           null,
           _react2.default.createElement(
             'a',
             { href: '#' },
-            'Create Ads'
+            'Baby Apparel'
           ),
           _react2.default.createElement(
             'a',
             { href: '#' },
-            'About Us'
+            'Baby Gifts'
           ),
           _react2.default.createElement(
-            'a',
-            { href: '#' },
-            'Log in1'
+            'div',
+            { className: 'dropdown' },
+            _react2.default.createElement(
+              'div',
+              { className: 'dropbtn' },
+              'Christening'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: ' dropdown-content' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              )
+            )
           ),
           _react2.default.createElement(
-            'a',
-            { href: '#', className: 'register-btn' },
-            'Register'
+            'div',
+            { className: 'dropdown' },
+            _react2.default.createElement(
+              'div',
+              { className: 'dropbtn' },
+              'Furniture'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: ' dropdown-content' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'dropdown' },
+            _react2.default.createElement(
+              'div',
+              { className: 'dropbtn' },
+              'Bedding'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: ' dropdown-content' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'dropdown' },
+            _react2.default.createElement(
+              'div',
+              { className: 'dropbtn' },
+              'Decor'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: ' dropdown-content' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'dropdown' },
+            _react2.default.createElement(
+              'div',
+              { className: 'dropbtn' },
+              'Lighting'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: ' dropdown-content' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'dropdown' },
+            _react2.default.createElement(
+              'div',
+              { className: 'dropbtn' },
+              'Sale'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: ' dropdown-content' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Silver'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'dropdown' },
+            _react2.default.createElement(
+              'div',
+              { className: 'dropbtn' },
+              'Brands'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: ' dropdown-content' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Christening'
+              )
+            )
           )
         )
       );

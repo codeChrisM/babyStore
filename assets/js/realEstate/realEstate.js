@@ -15,7 +15,7 @@ class App extends Component {
     return (<div>
       <Header />
       <section>
-      <Filter id="content-area"/>
+      
       <Listings />
       </section>
        </div>)
