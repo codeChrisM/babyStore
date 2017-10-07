@@ -14,7 +14,7 @@ export default class Header extends Component {
   render () {
     return (<header>
     <div className="header-top wrapper">
-        <div className="contact">Call us at: <span>708-246-1212</span><button className="chat-btn" type="submit">LIVE CHAT NOW</button></div>
+        <div className="contact">Call us at: <span>708-246-1212</span><button className="btn" type="submit">LIVE CHAT NOW</button></div>
         <div className="user-session-area">
           <div>Baby Registry</div>
           <div>Login/ Register</div>

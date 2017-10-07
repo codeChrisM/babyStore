@@ -1,5 +1,11 @@
 /*-------------Header Top Bar-------------*/
-.header-top *{display: inline-block}
+.header-top{
+  border-bottom:2px solid lightgray;
+  padding: 10px 0px;
+  *{
+  display: inline-block;
+  }
+}
 .user-session-area{float: right;}
 
 
@@ -24,6 +30,9 @@ nav{
   .dropdown {
       position: relative;
       display: inline-block;
+      &:hover .dropdown-content {
+          display: block;
+      }
   }
   .dropdown:hover .dropbtn, a:hover {
       background-color: #eeeeee;
@@ -36,9 +45,6 @@ nav{
       min-width: 160px;
       border: solid 2px #eee;
       z-index: 1;
-    &:hover .dropdown-content {
-        display: block;
-    }
   }
   .dropdown-content a {
       color: black;

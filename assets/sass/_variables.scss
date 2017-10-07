@@ -1,5 +1,29 @@
-$darkpurple: #0B002B;
-$grey: #FAF7F5;
+$cursive: 'Allura', cursive;
+$signiture: 'Alex Brush', cursive;
+$grey: #eee;
+$darkgrey: #f5f5f5;
 $offwhite: #FFFEFF;
-$pink: #FF758B;
-$darkgrey: #B0ABAD;
+$pink: #ffeaea;
+$blue:#7494b7;
+
+.btn{
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 1%, #ffeaea 53%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 1%,#ffeaea 53%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 1%,#ffeaea 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffeaea',GradientType=0 ); /* IE6-9 */
+padding: 7px;
+border: 1px solid lightgrey;
+margin: 5px;
+position: relative;
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 1px solid lightgrey;
+  z-index: -1;
+}
