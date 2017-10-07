@@ -1,29 +1,10 @@
-# Starter-Kit-2018
+#codeChrisM
 
+Using a project I was working on to learn react.  I found it faster to start off from a project that was underway with most of what i needed already installed so I can just get into building right away.
 
-So I built this for all the new web developers... My Goal is to save you time from the bullsh*t of spending hours looking for ways to speed up your learning. Sometimes all we want to do is just code.
-(if you are coming from my  [youtube channel CodingPhase ](https://www.youtube.com/channel/UC46wWUso9H5KPQcoL9iE3Ug) I will base all my tutorials from this starter kit)
+**Why I Chose React**
+I am currently learning React as a frame work.  And at first glance on the project I figured it was going to be a very fast a straight foward build for 2 pages that are responsive.  Not requiring me to even need a frame work or anything to dynamically happen.
 
-I broke it down in simple steps to get you going.
+However, after thinking about the actual real life application I thought to myself the client is going to add and change products and their information.  In real life we would need to have a way to actually have the information customizable and scale able.
 
-**Steps**
----------
-
-**Download or Pull This Repo**
-	Top of this page you can see where it says clone or download
-
- **Install Node**
-	https://nodejs.org/en/
-
-**Download Atom**
-	https://atom.io/
-
- **Install all the node packages** 
-On the root of this project run on your terminal (if you want you can do this with yarn but thats optional)
-    
-    npm install
-
-
-**Start the server**
-
-  npm run watch
+For this purposes of this test we aren't using a CMS.  But in reality there would be one or something that would be return information to the pages.  I have simulated this with dummy data.  But it is now immedietly able to be now to be implemented into whatever set up we have.  
