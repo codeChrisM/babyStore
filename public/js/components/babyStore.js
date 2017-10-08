@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 100:
+/***/ 101:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24,6 +24,10 @@ var _FeaturedProducts = __webpack_require__(97);
 
 var _FeaturedProducts2 = _interopRequireDefault(_FeaturedProducts);
 
+var _productData = __webpack_require__(99);
+
+var _productData2 = _interopRequireDefault(_productData);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41,7 +45,8 @@ var App = function (_Component) {
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
     _this.state = {
-      name: 'Chris'
+      name: 'Chris',
+      productData: _productData2.default
     };
 
     return _this;
@@ -50,6 +55,7 @@ var App = function (_Component) {
   _createClass(App, [{
     key: 'render',
     value: function render() {
+      console.log(this.state.productData);
       return _react2.default.createElement(
         'div',
         null,
@@ -533,6 +539,42 @@ var Header = function (_Component) {
 
 exports.default = Header;
 
+/***/ }),
+
+/***/ 99:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var productData = [{
+  title: 'Hazel Ruffle Top and Capri Set',
+  author: 'by Angel Dear',
+  price: '$49.00',
+  img: '/img/product_outfit.jpg',
+  details: 'details about product',
+  summary: 'a brief summary about this product is it is small'
+}, {
+  title: 'Hazel Ruffle Top and Capri Set',
+  author: 'by Angel Dear',
+  price: '$49.00',
+  img: '/img/product_outfit.jpg',
+  details: 'details about product',
+  summary: 'a brief summary about this product is it is small'
+}, {
+  title: 'Hazel Ruffle Top and Capri Set',
+  author: 'by Angel Dear',
+  price: '$49.00',
+  img: '/img/product_outfit.jpg',
+  details: 'details about product',
+  summary: 'a brief summary about this product is it is small'
+}];
+
+exports.default = productData;
+
 /***/ })
 
-},[100]);
+},[101]);
