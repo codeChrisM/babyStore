@@ -1,6 +1,7 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
 import Header from './Header.js'
+import FeaturedProducts from './FeaturedProducts.js'
 
 
 class App extends Component {
@@ -9,10 +10,12 @@ class App extends Component {
     this.state = {
       name: 'Chris'
     }
+
   }
   render () {
     return (<div>
         <Header />
+        <FeaturedProducts />
        </div>)
   }
 }
