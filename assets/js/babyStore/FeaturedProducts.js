@@ -7,41 +7,42 @@ export default class Header extends Component {
     this.state = {
       name: 'Chris'
     }
+    this.loopListings =this.loopListings.bind(this);
   }
   loopListings(){
-    return
-    <div className="product">
-        <div className="product-img">
-            <span className="details">details</span>  {/* detail to appear during hover over product img */}
-            <div className="summary">Summary about the product</div>
-        </div>
-        <div className="product-details">
-          <div className="product-title">title</div>
-          <div className="product-author">author</div>
-          <div className="product-price">price</div>
-          <span></span>
-        </div>
-    </div>
+
+
+    var {productData} = this.props
+    return productData.map((product, index)=> {
+      return (   <div className="product" key={index}>
+                  <div className="product-img">
+                  <img src={product.img} />
+                      <span className="details">{product.details}</span>  {/* detail to appear during hover over product img */}
+                      <div className="summary">{product.price}</div>
+                  </div>
+                  <div className="details">
+                    <div className="title">{product.title}</div>
+                    <div className="author">{product.author}</div>
+                    <div className="price">{product.price}</div>
+                    <span></span>
+                  </div>
+              </div>
+        )
+    })
 
   }
   render () {
     return (
       <section className="featured-area">
         <section className="featured-product-results">
-        <div className="product">
-            <div className="product-img">
-            <img src={'/img/product_outfit.jpg'} />
-                <span className="details">details</span>  {/* detail to appear during hover over product img */}
-                <div className="summary">Summary about the product</div>
+            <div className="product" >
+                    <div className="featured-block">
+                    <h2>Featured Products</h2>
+                    <p>Lorem ipsum dolor sit amet, eu ius erat commune, facer semper sea ad.</p>
+                    <button className="btn" type="submit">SEE ALL</button>
+                    </div>
             </div>
-            <div className="product-details">
-              <div className="product-title">title</div>
-              <div className="product-author">author</div>
-              <div className="product-price">price</div>
-              <span></span>
-            </div>
-        </div>
-
+          {this.loopListings()}
         </section>
       </section>
     )

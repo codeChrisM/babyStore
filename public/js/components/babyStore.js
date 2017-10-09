@@ -60,7 +60,7 @@ var App = function (_Component) {
         'div',
         null,
         _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_FeaturedProducts2.default, null)
+        _react2.default.createElement(_FeaturedProducts2.default, { productData: this.state.productData })
       );
     }
   }]);
@@ -109,52 +109,57 @@ var Header = function (_Component) {
     _this.state = {
       name: 'Chris'
     };
+    _this.loopListings = _this.loopListings.bind(_this);
     return _this;
   }
 
   _createClass(Header, [{
     key: 'loopListings',
     value: function loopListings() {
-      return;
-      _react2.default.createElement(
-        'div',
-        { className: 'product' },
-        _react2.default.createElement(
+      var productData = this.props.productData;
+
+      return productData.map(function (product, index) {
+        return _react2.default.createElement(
           'div',
-          { className: 'product-img' },
+          { className: 'product', key: index },
           _react2.default.createElement(
-            'span',
+            'div',
+            { className: 'product-img' },
+            _react2.default.createElement('img', { src: product.img }),
+            _react2.default.createElement(
+              'span',
+              { className: 'details' },
+              product.details
+            ),
+            '  ',
+            _react2.default.createElement(
+              'div',
+              { className: 'summary' },
+              product.price
+            )
+          ),
+          _react2.default.createElement(
+            'div',
             { className: 'details' },
-            'details'
-          ),
-          '  ',
-          _react2.default.createElement(
-            'div',
-            { className: 'summary' },
-            'Summary about the product'
+            _react2.default.createElement(
+              'div',
+              { className: 'title' },
+              product.title
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'author' },
+              product.author
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'price' },
+              product.price
+            ),
+            _react2.default.createElement('span', null)
           )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'product-details' },
-          _react2.default.createElement(
-            'div',
-            { className: 'product-title' },
-            'title'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'product-author' },
-            'author'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'product-price' },
-            'price'
-          ),
-          _react2.default.createElement('span', null)
-        )
-      );
+        );
+      });
     }
   }, {
     key: 'render',
@@ -170,41 +175,25 @@ var Header = function (_Component) {
             { className: 'product' },
             _react2.default.createElement(
               'div',
-              { className: 'product-img' },
-              _react2.default.createElement('img', { src: '/img/product_outfit.jpg' }),
+              { className: 'featured-block' },
               _react2.default.createElement(
-                'span',
-                { className: 'details' },
-                'details'
+                'h2',
+                null,
+                'Featured Products'
               ),
-              '  ',
               _react2.default.createElement(
-                'div',
-                { className: 'summary' },
-                'Summary about the product'
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, eu ius erat commune, facer semper sea ad.'
+              ),
+              _react2.default.createElement(
+                'button',
+                { className: 'btn', type: 'submit' },
+                'SEE ALL'
               )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'product-details' },
-              _react2.default.createElement(
-                'div',
-                { className: 'product-title' },
-                'title'
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'product-author' },
-                'author'
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'product-price' },
-                'price'
-              ),
-              _react2.default.createElement('span', null)
             )
-          )
+          ),
+          this.loopListings()
         )
       );
     }
@@ -558,17 +547,17 @@ var productData = [{
   details: 'details about product',
   summary: 'a brief summary about this product is it is small'
 }, {
-  title: 'Hazel Ruffle Top and Capri Set',
-  author: 'by Angel Dear',
-  price: '$49.00',
-  img: '/img/product_outfit.jpg',
+  title: 'Alexis Crib with Rose Garland',
+  author: 'by Newport Cottages',
+  price: '$1,395.00',
+  img: '/img/product_crib.jpg',
   details: 'details about product',
   summary: 'a brief summary about this product is it is small'
 }, {
-  title: 'Hazel Ruffle Top and Capri Set',
-  author: 'by Angel Dear',
-  price: '$49.00',
-  img: '/img/product_outfit.jpg',
+  title: 'Little G Plush Giraffe',
+  author: 'by Little Giraffe ',
+  price: '$42.00',
+  img: '/img/product_plush.jpg',
   details: 'details about product',
   summary: 'a brief summary about this product is it is small'
 }];

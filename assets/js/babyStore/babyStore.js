@@ -19,7 +19,7 @@ class App extends Component {
     console.log(this.state.productData);
     return (<div>
         <Header />
-        <FeaturedProducts />
+        <FeaturedProducts productData={this.state.productData} />
        </div>)
   }
 }
